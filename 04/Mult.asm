@@ -11,7 +11,7 @@
 @result
 M = 0
 
-@16
+@1
 D=A
 
 @counter
@@ -37,8 +37,9 @@ D = M // D = counter, initialized to 16
 (CB3)
 @counter
 M=M-1
+D=M
 @LOOP
-M;JGE //while counter >= 0
+D;JGE //while counter >= 0
 
 @result
 D=M
